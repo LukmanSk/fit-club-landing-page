@@ -1,0 +1,17 @@
+@import "reset";
+
+:root {
+    --clr-primary: #f7b5cc;
+    --clr-neutral-100: #ffffff;
+    --clr-neutral-900: #111111;
+    --clr-accent-700: #cb9bf9;
+    --clr-accent-800: #800ef1;
+}
+
+// utilities
+
+// General Styling
+
+body {
+    font-family: "Open Sans", sans-serif;
+}

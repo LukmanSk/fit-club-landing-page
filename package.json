@@ -1,0 +1,26 @@
+{
+  "name": "fit-club-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "watch:sass":"node-sass sass/main.scss css/style.css -w",
+    "live-server":"live-server",
+    "start":"npm-run-all --parallel watch:sass live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukmanSk/fit-club-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LukmanSk/fit-club-landing-page/issues"
+  },
+  "homepage": "https://github.com/LukmanSk/fit-club-landing-page#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
