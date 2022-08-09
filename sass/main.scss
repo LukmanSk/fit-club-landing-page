@@ -3,8 +3,12 @@
 :root {
     --clr-primary: #f7b5cc;
     --clr-neutral-100: #ffffff;
+    --clr-neutral-200: #f2f2f2;
+
+    --clr-neutral-800: #808080;
     --clr-neutral-900: #111111;
     --clr-accent-700: #cb9bf9;
+
     --clr-accent-800: #800ef1;
 }
 
@@ -34,6 +38,17 @@
     &__primary {
         color: white;
         background-image: linear-gradient(var(--clr-accent-800), var(--clr-accent-700));
+    }
+}
+.btn {
+    display: inline-block;
+    margin-top: 1.25rem;
+    text-transform: uppercase;
+    color: var(--clr-neutral-900);
+
+    &--card {
+        border-bottom: 0.3rem solid var(--clr-accent-800);
+        padding-bottom: 0.1rem;
     }
 }
 // General Styling
@@ -71,5 +86,28 @@
         font-size: 1.25rem;
         font-weight: 400;
         margin-top: 1rem;
+    }
+}
+
+// Services
+
+.services {
+    &__img-content {
+        clip-path: circle();
+        max-width: 55rem;
+    }
+
+    &__card {
+        background-color: #f2f2f2;
+        margin-block: 2rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        &-title {
+            font-size: 1.5rem;
+            color: var(--clr-accent-800);
+        }
+        &-description {
+            color: var(--clr-neutral-800);
+        }
     }
 }
