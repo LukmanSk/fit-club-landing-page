@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&family=Archivo:wght@600;700;900&family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&family=Archivo:wght@600;700;900&family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 /*
 font-family: 'Archivo', sans-serif;
 font-family: 'Archivo Narrow', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
 *,
@@ -23,6 +24,32 @@ ul {
 a {
   text-decoration: none; }
 
+body {
+  font-family: "Open Sans", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: 700; }
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--clr-neutral-900); }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 1rem; }
+
+.para {
+  margin-top: 1.25rem;
+  line-height: 1.6; }
+
 :root {
   --clr-primary: #f7b5cc;
   --clr-neutral-100: #ffffff;
@@ -30,5 +57,50 @@ a {
   --clr-accent-700: #cb9bf9;
   --clr-accent-800: #800ef1; }
 
-body {
-  font-family: "Open Sans", sans-serif; }
+.container {
+  max-width: 111rem;
+  margin-inline: auto;
+  padding: 2rem 1.5rem; }
+
+.img-credit {
+  margin-top: 1.25rem; }
+  .img-credit a {
+    border-bottom: 1px solid var(--clr-primary);
+    color: var(--clr-neutral-900); }
+
+.button {
+  padding: 1rem 3.25rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+  display: inline-block;
+  border-radius: 1rem;
+  margin-top: 2rem; }
+  .button__primary {
+    color: white;
+    background-image: linear-gradient(var(--clr-accent-800), var(--clr-accent-700)); }
+
+.header {
+  padding: 1.4rem 1.5rem; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .nav__logo {
+    width: 4em; }
+  .nav__hamburger-icon {
+    font-size: 1.7em; }
+  .nav__menu {
+    display: none; }
+
+.hero__heading-main {
+  font-size: 2.75rem;
+  text-transform: uppercase; }
+
+.hero__heading-sub {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 1rem; }

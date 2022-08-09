@@ -9,9 +9,67 @@
 }
 
 // utilities
-
+.container {
+    max-width: 111rem;
+    margin-inline: auto;
+    padding: 2rem 1.5rem;
+}
+.img-credit {
+    margin-top: 1.25rem;
+    a {
+        border-bottom: 1px solid var(--clr-primary);
+        color: var(--clr-neutral-900);
+    }
+}
+.button {
+    padding: 1rem 3.25rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    display: inline-block;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    &__primary {
+        color: white;
+        background-image: linear-gradient(var(--clr-accent-800), var(--clr-accent-700));
+    }
+}
 // General Styling
 
-body {
-    font-family: "Open Sans", sans-serif;
+// Header
+
+.header {
+    padding: 1.4rem 1.5rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        width: 4em;
+    }
+    &__hamburger {
+        &-icon {
+            font-size: 1.7em;
+        }
+    }
+    &__menu {
+        display: none;
+    }
+}
+
+// hero
+.hero {
+    &__heading-main {
+        font-size: 2.75rem;
+        text-transform: uppercase;
+    }
+    &__heading-sub {
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-top: 1rem;
+    }
 }
